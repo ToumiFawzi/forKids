@@ -234,3 +234,7 @@ a:focus { text-decoration: none; color: black; }
 .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(128, 182, 42, 0.5);
 }
+form
+{overflow:hidden;
+overflow-y:scroll;	
+}

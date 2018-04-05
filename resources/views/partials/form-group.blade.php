@@ -6,4 +6,4 @@
             {{ $errors->first($name) }}
         </div>
     @endif
-</div> 
+</div>

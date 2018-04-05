@@ -20,11 +20,66 @@
         @endslot
         <form method="POST" action="{{ route('register') }}">
             {{ csrf_field() }}
+           {{ csrf_field() }}
             @include('partials.form-group', [
-                'title' => __('Nom'),
+                'title' => __('NOM Prenom'),
                 'type' => 'text',
-                'name' => 'name',
+                'name' => 'identity',
                 'required' => true,
+                ])
+                @include('partials.form-group', [
+                'title' => __('NOM Prenom  1er Enfant'),
+                'type' => 'text',
+                'name' => 'kididentity1',
+                'required' => true,
+                ])
+                @include('partials.form-group', [
+                'title' => __('age 1er Enfant'),
+                'type' => 'number',
+                'name' => 'kidage1',
+                'required' => true,
+                ])
+                @include('partials.form-group', [
+                'title' => __('classe 1er Enfant'),
+                'type' => 'text',
+                'name' => 'classkid1',
+                'required' => true,
+                ])
+                @include('partials.form-group', [
+                'title' => __('NOM Prenom 2ème Enfant'),
+                'type' => 'text',
+                'name' => 'kididentity2',
+                'required' => false,
+                ])
+                @include('partials.form-group', [
+                'title' => __('age 2eme Enfant'),
+                'type' => 'number',
+                'name' => 'kidage2',
+                'required' => false,
+                ])
+                 @include('partials.form-group', [
+                'title' => __('classe 2eme Enfant'),
+                'type' => 'text',
+                'name' => 'classkid2',
+                'required' => false,
+                ])
+                @include('partials.form-group', [
+                'title' => __('NOM Prenom 3ème Enfant'),
+                'type' => 'text',
+                'name' => 'kididentity3',
+                'required' => false,
+                ])
+                 @include('partials.form-group', [
+                'title' => __('age 3ème Enfant'),
+                'type' => 'number',
+                'name' => 'kidage3',
+                'required' => false,
+                ])
+                 @include('partials.form-group', [
+                'title' => __('classe 3ème Enfant'),
+                'type' => 'text',
+                'name' => 'classkid3',
+                'required' => false,
                 ])
             @include('partials.form-group', [
                 'title' => __('Adresse email'),
