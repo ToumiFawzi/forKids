@@ -8984,8 +8984,28 @@ html, body {
     background-color: #f7f7f7;
 }
 
+.container {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container_hidden {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+}
+
 .row{
 margin: 0;
+}
+
+
+.col-md-3 {
+    padding: 0;
+    height: 100%;
 }
 
 a { text-decoration: none; color: black; }
@@ -9062,7 +9082,7 @@ hr {
 .avatar {
     width: 20vh;
     height: 20vh;
-    background-image: url('../../images/noavatar.svg');
+    background-image: url('../../resources/images/noavatar.svg');
     background-size: 103%;
     background-position:center;
     border-radius: 100%;   
@@ -9089,7 +9109,6 @@ hr {
     border-radius: 2px;
     padding: 2vh;
     margin: 13vh 2vh 2vh 2vh;
-    height: 100%;
     color: #333333;
     font-size: 2.5vh;
     -moz-box-shadow: 0px 1px 1px 0px #9b9b9b;
@@ -9097,8 +9116,6 @@ hr {
     -o-box-shadow: 0px 1px 1px 0px #9b9b9b;
     box-shadow: 0px 1px 1px 0px #9b9b9b;
     filter:progid:DXImageTransform.Microsoft.Shadow(color=#9b9b9b, Direction=180, Strength=1);
-    min-height: 55vh;
-    max-height: 65vh;
 }
 
 .colonne_invisible {
@@ -9113,6 +9130,11 @@ hr {
 
 .colonnecontent {
     float: left;
+}
+
+.liste_users {
+    background-color: #232323;
+    height: 100%;
 }
 
 .cadre {
@@ -9133,7 +9155,7 @@ hr {
     margin-top: 10px;
 }
 
-.communaute {
+.communaute_lien {
     display: flex;
     text-align: center;
     margin: 3vh;
@@ -9163,7 +9185,7 @@ hr {
 .avatarenfant {
     width: 10vh;
     height: 10vh;
-    background-image: url('../../images/noavatar.svg');
+    background-image: url('../../resources/images/noavatar.svg');
     background-size: 103%;
     background-position:center;
     border-radius: 100%; 
