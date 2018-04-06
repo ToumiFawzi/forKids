@@ -12,8 +12,6 @@
 </head>
 <body>
 @yield('content')
-@component('components.foot')
-@endcomponent
 <script src="{{ asset('js/app.js') }}"></script>
 @yield('script')
 <script>
