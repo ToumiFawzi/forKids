@@ -15,10 +15,11 @@ class Community extends Migration
     {
         Schema::create('community', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name',255);
+            $table->string('title',255);
             $table->string('description');
             $table->integer('responsable_id')->unsigned();
             $table->foreign('responsable_id')->references('id')->on('users');
+            $table->dateTime('date');
         });
     }
 
