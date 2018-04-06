@@ -17,6 +17,24 @@ a { text-decoration: none; color: black; }
 a:hover { text-decoration: none; color: black; }
 a:focus { text-decoration: none; color: black; }
 
+hr {
+	margin: 5vh;
+	border: 1px solid #80b62a;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #80b62a;
+    border-radius: 100px ;
+}
+
+::-webkit-scrollbar-button {
+    height: 10px;
+}
+
 .picto {
     width: 4vh;
     margin-left: 1vh;
@@ -120,6 +138,13 @@ a:focus { text-decoration: none; color: black; }
 
 .colonnecontent {
     float: left;
+}
+
+.cadre {
+	overflow-y: scroll;
+	 height: 40vh;
+	 padding: 2vh;
+	 margin: 3vh 0;
 }
 
 .elementlist {
@@ -234,7 +259,62 @@ a:focus { text-decoration: none; color: black; }
 .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(128, 182, 42, 0.5);
 }
-form
-{overflow:hidden;
-overflow-y:scroll;	
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #6e9b25;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(128, 182, 42, 0.25);
+}
+
+.form-control:disabled, .form-control[readonly] {
+  background-color: #e9ecef;
+  opacity: 1;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  background-color: #6e9b25;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(128, 182, 42, 0.25);
+}
+
+.custom-control-input:active ~ .custom-control-label::before {
+  color: #fff;
+  background-color: #ade55e;
+}
+
+.custom-control-input:disabled ~ .custom-control-label::before {
+  background-color: #ecefe8;
+}
+
+.custom-control-label::before {
+  background-color: #ecefe8;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #80B62A;
+}
+
+.custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before {
+  background-color: #80B62A;
+}
+
+.custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before {
+  background-color: rgba(128, 182, 42, 0.5);
+}
+
+.custom-checkbox .custom-control-input:disabled:indeterminate ~ .custom-control-label::before {
+  background-color: rgba(128, 182, 42, 0.5);
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #80B62A;
+}
+
+.custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::before {
+  background-color: rgba(128, 182, 42, 0.5);
 }
