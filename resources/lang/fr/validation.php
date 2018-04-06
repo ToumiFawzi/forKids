@@ -140,5 +140,16 @@ return [
         'time' => 'heure',
         'available' => 'disponible',
         'size' => 'taille',
+        'kidage1'=> 'l\'age',
+        'kidage2'=> 'l\'age',
+        'kidage3'=> 'l\'age',
+        'identity'=>'l\'identité',
+        'kididentity1'=>'l\'identité de l\'enfant',
+        'kididentity2'=>'l\'identité du 2ème enfant',
+        'kididentity3'=>'l\'identité du 3ème enfant',
+        'classkid1'=>'la classe de l\'enfant',
+        'classkid2'=>'la classe du 2ème enfant',
+        'classkid3'=>'la classe du 3ème enfant',
+        
     ],
 ];
