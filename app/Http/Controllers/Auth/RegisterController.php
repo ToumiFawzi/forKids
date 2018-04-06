@@ -27,7 +27,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -48,7 +48,16 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => 'required|string|max:255',
+            'identity' => 'required|string|max:255',
+            'kididentity1'=>'required|string|max:255',
+            'classkid1'=>'required|string|max:255',
+            'kidage1'=>'required|integer',
+            'kididentity2'=>'bail|string|max:255',
+            'classkid2'=>'bail|string|max:255',
+            'kidage2'=>'integer',
+            'kididentity3'=>'bail|string|max:255',
+            'classkid3'=>'bail|string|max:255',
+            'kidage3'=>'integer',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
         ]);
@@ -63,9 +72,20 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         return User::create([
-            'name' => $data['name'],
+            'identity' => $data['identity'],
+            'kididentity1'=>$data['kididentity1'],
+            'classkid1'=>$data['classkid1'],
+            'kidage1'=>$data['kidage1'],
+            'kididentity2'=>$data['kididentity2'],
+            'classkid2'=>$data['classkid2'],
+            'kidage2'=>$data['kidage2'],
+            'kididentity3'=>$data['kididentity3'],
+            'classkid3'=>$data['classkid3'],
+            'kidage3'=>$data['kidage3'],
+            'status'=> "parent",
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
+            
         ]);
     }
 }
