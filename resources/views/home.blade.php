@@ -2,11 +2,11 @@
 @section('content')
 @guest
 <script>window.location = "{{ route('login') }}";</script>
-@else 
+@else
 @component('components.nav')
 @endcomponent
-        <div class="row">
-            <div class="col-md-4">
+        <div class="row rowhome">
+            <div class="col-xl-4">
                 <div class="colonne">
                     <div class="avatarnom">
                         <div class="avatar"></div>
@@ -23,24 +23,14 @@
                     <span class="elementlist">Adresse : </span>42 rue Larionov<br>La Cotonne<br>42000 Saint-Etienne<br>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-xl-4">
                 <div class="colonne">
                     <div class="categorie">Communautés</div><br>
-                    <a href="#">
-                    <div class="communaute_lien">
-                        <div class="communaute_titre">Communauté 1</div>
-                        <div class="communaute_arrow"><img src="../resources/images/picto_arrow.svg" class="picto" style="padding-right: -4px;"></div>
-                    </div>
-                    </a>
-                    <a href="#">
-                    <div class="communaute_lien">
-                        <div class="communaute_titre">Communauté 2</div>
-                        <div class="communaute_arrow"><img src="../resources/images/picto_arrow.svg" class="picto" style="padding-right: -4px;"></div>
-                    </div>
-                    </a>
+        		    	@component('components.communaute_href')
+                    	@endcomponent
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-xl-4">
                 <div class="colonne">
                     <div class="categorie">Enfants</div><br>
                     <div class="enfant">
