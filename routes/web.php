@@ -18,4 +18,6 @@
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('/thematics', 'ThematicsController@index')->name('thematics');
+Route::get('/chat', 'ChatController@index')->name('chat');
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
