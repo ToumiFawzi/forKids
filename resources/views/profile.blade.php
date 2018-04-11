@@ -9,16 +9,33 @@
         <div class="row rowhome">
             <div class="col-xl-4">
                 <div class="colonne">
+                <form method="POST" action="{{ route('login') }}">
                     <div class="avatarnom">
                         <div class="avatar"></div>
                         <div class="parentsname">
-                          {{ Auth::user()->identity}}
+            @include('partials.form-group', [
+                'title' => __('NOM Prénom'),
+                'type' => 'text',
+                'name' => 'identity',
+                'required' => true,
+                ])
                         </div>
-                        
-                        <a href="{{ route('profile') }}"><img src="../resources/images/picto_edit.svg" class="picto" style="float: right"></a>
                     </div>
-                    <span class="elementlist">Email : </span>{{Auth::user() -> email }}<br>
-       
+                    <table>
+                    <tr>
+                    <td>
+                    <span class="elementlist">Email : </span>
+                    </td>
+                    <td>
+                    @include('partials.form-group', [
+                'title' => __(''),
+                'type' => 'email',
+                'name' => 'email',
+                'required' => true,
+                ])
+                    </td>
+                    </tr>
+                    </table>
                 </div>
             </div>
             <div class="col-xl-4">

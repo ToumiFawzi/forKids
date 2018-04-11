@@ -21,7 +21,6 @@
         <div class="cadre">
         <form method="POST" action="{{ route('register') }}">
             {{ csrf_field() }}
-           {{ csrf_field() }}
             @include('partials.form-group', [
                 'title' => __('NOM Prénom'),
                 'type' => 'text',

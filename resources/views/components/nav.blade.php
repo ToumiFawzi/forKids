@@ -18,7 +18,7 @@
     					<a class="nav-link" href="{{ route('register') }}">@lang('Inscription')</a>
     				</div>
     			@else
-    			    <a href="#">
+    			    <a href="{{ route('profile') }}">
     			        <img src="../resources/images/picto_profile.svg" class="picto">
     			    </a>
     			    <a id="logout" href="{{ route('logout') }}">
