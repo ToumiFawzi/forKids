@@ -4,13 +4,13 @@
 <div class="container_hidden">
 	@component('components.nav') @endcomponent
 	<div class="row" style="height: 100%;">
-		<div class="col-md-3">
+		<div class="col-md-3" id="aside">
 			<div class="liste_users">
 		    	@component('components.liste_users_href')
             	@endcomponent
 			</div>
 		</div>
-		<div class="col-md-9">
+		<div class="col-md-9" id="acontent">
 		    @component('components.thematics_href')
             @endcomponent
 		</div>
