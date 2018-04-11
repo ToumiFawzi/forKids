@@ -24,18 +24,8 @@
             <div class="col-xl-4">
                 <div class="colonne">
                     <div class="categorie">Communautés</div><br>
-                    <a href="{{route('thematics')}}">
-                    <div class="communaute_lien">
-                        <div class="communaute_titre">{{Auth::user() -> classkid1 }}</div>
-                        <div class="communaute_arrow"><img src="../resources/images/picto_arrow.svg" class="picto" style="padding-right: -4px;"></div>
-                    </div>
-                    </a>
-                    <a href="#">
-                    <div class="communaute_lien">
-                        <div class="communaute_titre">{{Auth::user() -> classkid2 }}</div>
-                        <div class="communaute_arrow"><img src="../resources/images/picto_arrow.svg" class="picto" style="padding-right: -4px;"></div>
-                    </div>
-                    </a>
+                    @component('components.communaute_href')
+                    @endcomponent
                 </div>
             </div>
             <div class="col-xl-4">
@@ -53,22 +43,6 @@
                                 </td>
                                 <td>
                                     <span class="kidsage">{{Auth::user()->kidage1}} ans</span><br><span class="kidslevel">{{Auth::user()->classkid1}}</span>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="enfant">
-                        <table style="width: 100%;">
-                            <tr>
-                                <td>
-                                    <div class="avatarenfant"></div>
-                                </td>
-                                <td>
-                                    <span class="kidsname">{{Auth::user()->kididentity2}}</span><br>
-                                    <span class="kidsetablissement">Collège Honoré d'Urfé</span>
-                                </td>
-                                <td>
-                                    <span class="kidsage">{{Auth::user()->kidage2}} ans</span><br><span class="kidslevel">{{Auth::user()->classkid2}}</span>
                                 </td>
                             </tr>
                         </table>
