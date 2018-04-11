@@ -36,3 +36,5 @@
 		</div>
 	</div>
 </div>
+@component('components.foot')
+@endcomponent
