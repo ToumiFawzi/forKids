@@ -59,6 +59,14 @@ html, body {
 	}
 }
 
+#message {
+	width: 100%;
+}
+
+#okmessage {
+	visibility: hidden;
+}
+
 a {
 	text-decoration: none;
 	color: white;
