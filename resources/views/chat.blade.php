@@ -14,9 +14,20 @@
 					<td>
 						<div class="thematique_top_avatar"></div>
 					</td>
-					<td style="text-align: center; width: 100%;"><span
+					<td style="text-align: center; width: 100%;">
+					    <table style="width: 100%;">
+					        <tr>
+					            <td>
+					                <span
 						class="thematique_top_author">BERNARD Thierry</span><br> <span
-						class="thematique_top_date">Posté le 4 Octobre</span><br> <span
+						class="thematique_top_date">Posté le 4 Octobre</span>
+						        </td>
+						        <td style="text-align: right;">
+						            <span class="thematique_boutons"><a href="#"><img src="../resources/images/picto_edit.svg" class="picto_small" style="padding-right: -4px;"></a><a href="#"><img src="../resources/images/picto_delete.svg" class="picto_small" style="padding-right: -4px;"></a></span>
+						        </td>
+						    </tr>
+						</table>
+						<span
 						class="thematique_top_content">Quelqu'un pour déposer mon fils à
 							l'école demain matin ?</span></td>
 				</tr>
