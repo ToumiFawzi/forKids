@@ -9045,6 +9045,7 @@ html, body {
 a {
 	text-decoration: none;
 	color: white;
+	z-index: 3;
 }
 
 a:hover {
@@ -9081,6 +9082,12 @@ hr {
 
 .picto {
 	width: 4vh;
+	margin-left: 1vh;
+	margin-right: 1vh;
+}
+
+.picto_small {
+	width: 3vh;
 	margin-left: 1vh;
 	margin-right: 1vh;
 }
@@ -9275,7 +9282,7 @@ hr {
 
 .thematique_avatar {
 	width: 10vh;
-	height: 9.2vh;
+	height: 10vh;
 	background-image: url('../../resources/images/noavatar.svg');
 	background-size: 103%;
 	background-position: center;
@@ -9286,7 +9293,7 @@ hr {
 	transition-property: border-radius;
 	transition-duration: 0.2s;
 	display: inline-block;
-	margin: 2vh -9.9vh 2vh 2vh;
+	margin: 2vh -10vh 2vh 2vh;
 	z-index: 4;
 }
 
@@ -9312,6 +9319,10 @@ hr {
 .thematique_author {
 	font-weight: bold;
 	font-size: 2.5vh;
+}
+
+.thematique_boutons {
+	text-align: right;
 }
 
 .thematique_content {
