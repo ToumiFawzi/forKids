@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Thematics;
 
-class ThematicsController extends Controller
+class CommunityController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,10 +13,7 @@ class ThematicsController extends Controller
      */
     public function index()
     {
-        $post = Thematics::get();
-        
-        return view('thematics', compact('post'));
-        
+        //
     }
 
     /**

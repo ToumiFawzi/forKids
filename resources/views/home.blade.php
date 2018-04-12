@@ -24,8 +24,10 @@
             <div class="col-xl-4">
                 <div class="colonne">
                     <div class="categorie">Communautés</div><br>
+                   
                     @component('components.communaute_href')
                     @endcomponent
+                    
                 </div>
             </div>
             <div class="col-xl-4">
